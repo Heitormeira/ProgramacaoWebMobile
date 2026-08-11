@@ -15,7 +15,7 @@ export default function Home() {
         />
         <div className={styles.intro}>
           <h1>
-            {"Deixa eu dar uma  botadinha LIl "}
+            {"Heitor Meira site"}
             <code className={styles.code}>page.js</code> file.
           </h1>
           <p>
