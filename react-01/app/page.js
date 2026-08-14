@@ -69,28 +69,6 @@ export default function Home() {
       featured: true
     },
     {
-      title: "Sistema de Gerenciamento de Pedidos",
-      tech: "Java",
-      description: "Aplicação para gerenciamento de pedidos utilizando Programação Orientada a Objetos",
-      features: [
-        "Cadastro de pedidos",
-        "Consulta de pedidos",
-        "Edição de informações",
-        "Controle de versão com Git"
-      ],
-      concepts: [
-        "Programação Orientada a Objetos",
-        "Herança e Polimorfismo",
-        "Encapsulamento",
-        "Padrões de Design"
-      ],
-      technologies: ["Java", "POO", "Git", "GitHub"],
-      tags: ["Java", "POO", "Git", "GitHub"],
-      year: "2025",
-      university: "UNICAP",
-      links: { github: "#" }
-    },
-    {
       title: "Website — Startup Ocupacional 3D",
       tech: "Wix",
       description: "Website para apresentação de startup especializada em soluções de impressão 3D",
