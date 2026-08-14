@@ -158,27 +158,4 @@ export default function Home() {
       </footer>
     </main>
   );
-
-      <section className={styles.stats} aria-label="Numeros de experiencia">
-        <div><strong>12+</strong><span>anos liderando<br />projetos</span></div>
-        <div><strong>38</strong><span>marcas<br />transformadas</span></div>
-        <div><strong>04</strong><span>continentes<br />conectados</span></div>
-        <p>“Quem enxerga longe<br />decide melhor.”</p>
-      </section>
-
-      <section className={styles.about} id="sobre">
-        <div className={styles.sectionMarker}>02 / SOBRE</div>
-        <div>
-          <h2>O trabalho fala.<br /><span>Os resultados respondem.</span></h2>
-          <p>Construo caminhos para pessoas e negócios que não querem apenas acompanhar o mercado. Meu papel é transformar ambição em direção, e direção em algo impossível de ignorar.</p>
-        </div>
-      </section>
-
-      <footer className={styles.footer} id="contato">
-        <div><span className={styles.footerKicker}>TEM UMA IDEIA GRANDE?</span><h2>Vamos fazer<br /><em>acontecer.</em></h2></div>
-        <a className={styles.circleLink} href="mailto:oi@heitormeira.com" aria-label="Enviar email para Heitor Meira">-&gt;</a>
-        <div className={styles.footerMeta}><span>© 2025 HEITOR MEIRA</span><span>OI@HEITORMEIRA.COM</span></div>
-      </footer>
-    </main>
-  );
 }
