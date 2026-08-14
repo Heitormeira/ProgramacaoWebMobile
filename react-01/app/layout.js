@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Heitor Meira, O chefe.",
-  description: "Estrategia, execucao e impacto por Heitor Meira.",
+  title: "Heitor Meira | Desenvolvedor em Formação",
+  description: "Portfólio profissional de Heitor Meira, estudante de Ciência da Computação na UNICAP, buscando oportunidades em desenvolvimento de software e back-end.",
 };
 
 export default function RootLayout({ children }) {
