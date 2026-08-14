@@ -348,6 +348,208 @@
   margin: 0 auto;
 }
 
+.featuredProjectContainer {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.featuredProject {
+  padding: 40px;
+  background: white;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  position: relative;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  padding: 4px 16px;
+  background: var(--accent);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+}
+
+.featuredHeader {
+  margin-bottom: 32px;
+}
+
+.featuredTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 12px 0;
+  line-height: 1.2;
+}
+
+.featuredSubtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.featuredDescription {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.featuredContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.featuredSection {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.featuredSection:last-of-type {
+  border-bottom: none;
+}
+
+.featuredSection h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 12px;
+}
+
+.featuredSection p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featureList li {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.featureList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.projectFeatures,
+.projectConcepts,
+.projectTeam {
+  padding: 16px;
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+
+.projectFeatures h4,
+.projectConcepts h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.projectTeam {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 12px;
+}
+
+.projectTeam strong {
+  color: var(--foreground);
+}
+
+.featuredTechStack {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.featuredTechStack h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 12px;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techBadge {
+  padding: 6px 14px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.featuredMeta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background: var(--accent-light);
+  border-radius: 8px;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metaItem strong {
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.metaItem span {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.featuredTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.featuredLinks {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .projectCard {
   padding: 32px;
   background: white;
@@ -362,6 +564,11 @@
   border-color: var(--accent);
   box-shadow: 0 8px 24px rgba(26, 95, 63, 0.1);
   transform: translateY(-4px);
+}
+
+.projectCardFeatured {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(26, 95, 63, 0.08);
 }
 
 .projectTech {
@@ -711,6 +918,28 @@
     font-size: clamp(28px, 7vw, 36px);
   }
 
+  .featuredProject {
+    padding: 24px;
+  }
+
+  .featuredTitle {
+    font-size: 24px;
+  }
+
+  .featuredMeta {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredLinks {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+
   .projectsGrid {
     grid-template-columns: 1fr;
   }
@@ -773,6 +1002,27 @@
     font-size: 24px;
   }
 
+  .featuredProject {
+    padding: 20px;
+  }
+
+  .featuredBadge {
+    left: 16px;
+  }
+
+  .featuredTitle {
+    font-size: 20px;
+  }
+
+  .featuredHeader {
+    margin-bottom: 20px;
+  }
+
+  .featuredMeta {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
   .projectCard {
     padding: 20px;
   }
@@ -783,5 +1033,26 @@
 
   .aboutHighlight {
     grid-template-columns: 1fr;
+  }
+
+  .techStack {
+    flex-direction: column;
+  }
+
+  .techBadge {
+    width: 100%;
+    text-align: center;
+  }
+
+  .featuredContent {
+    gap: 16px;
+  }
+
+  .featureList {
+    gap: 6px;
+  }
+
+  .featureList li {
+    font-size: 13px;
   }
 }

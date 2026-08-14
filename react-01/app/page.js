@@ -1,44 +1,115 @@
 import styles from "./page.module.css";
 
 export default function Home() {
+  const mainProject = {
+    title: "Gestão de Sócios CNC",
+    subtitle: "Sistema de Gestão de Sócios — Clube Náutico Capibaribe",
+    tech: "Java",
+    description: "Sistema completo para gerenciamento de sócios de um clube náutico, desenvolvido com Programação Orientada a Objetos.",
+    problem: "Gestão eficiente de associados e categorias de membros de uma instituição",
+    features: [
+      "Cadastro, edição e exclusão de sócios",
+      "Gerenciamento de categorias",
+      "Consulta de benefícios por categoria",
+      "Autenticação de usuários (login admin)",
+      "Persistência de dados via serialização",
+      "Salvamento automático em background com threads"
+    ],
+    concepts: [
+      "Programação Orientada a Objetos (Herança, Abstração, Polimorfismo, Encapsulamento)",
+      "Threads (AutoSaveThread para salvamento periódico)",
+      "Collections e Generics",
+      "Serialização e I/O (Persistência em arquivos .dat)",
+      "Padrão Singleton",
+      "Tratamento de Exceções"
+    ],
+    technologies: ["Java 17+", "POO", "Threads", "Collections", "Serialização", "CLI"],
+    tags: ["Java", "POO", "Threads", "Serialização", "Padrões de Projeto", "CLI"],
+    team: ["Heitor Meira", "João da Fonte Queiroz", "Marcelo Caldas", "Addson Cardoso"],
+    year: "2025",
+    university: "UNICAP — Ciências da Computação",
+    links: {
+      github: "https://github.com/joaodafontequeiroz/gestao-socios-cnc",
+      uml_classes: "https://drive.google.com/file/d/1NYZLVUbe7Bt6H9J6Ul4Sgvqj aF1lqBpx/view?usp=sharing",
+      uml_cases: "https://drive.google.com/file/d/1yJZoxdZb9Wph1DpmLcd-ahDBf01LC_lb/view?usp=sharing",
+      video: "https://drive.google.com/file/d/1426ifEZPnV04pToTNqiVbNagvYi_qKqF/view?usp=sharing"
+    },
+    featured: true
+  };
+
   const projects = [
+    {
+      title: "HashGuard System — Tabela Hash com Sondagem Linear",
+      tech: "C",
+      description: "Implementação de Tabela Hash com Endereçamento Aberto e Sondagem Linear para cadastro e autenticação de usuários",
+      problem: "Demonstrar o funcionamento eficiente de estruturas de dados para armazenamento e busca",
+      features: [
+        "Cadastro de usuários com senha",
+        "Login com validação de credenciais",
+        "Remoção de usuários com marcador de item removido",
+        "Consulta e visualização do estado da tabela",
+        "Hashing de senhas com função djb2"
+      ],
+      concepts: [
+        "Tabela Hash com Endereçamento Aberto",
+        "Sondagem Linear para tratamento de colisões",
+        "Marcador ITEM_REMOVIDO para manutenção da estrutura",
+        "Funções de hash (djb2)",
+        "Alocação dinâmica de memória",
+        "Ponteiros e manipulação de estruturas"
+      ],
+      technologies: ["C", "GCC", "Estruturas de Dados", "Hashing", "Gerenciamento de Memória"],
+      tags: ["C", "Hash", "Estruturas de Dados", "Ponteiros", "Memória", "Algoritmos"],
+      team: ["Heitor Meira", "João da Fonte Queiroz", "Marcelo Caldas"],
+      year: "2025",
+      university: "UNICAP",
+      links: {
+        github: "https://github.com/joaodafontequeiroz/projeto-Tabela-Hash-estrutura-de-dados-"
+      },
+      featured: true
+    },
     {
       title: "Sistema de Gerenciamento de Pedidos",
       tech: "Java",
-      description: "Aplicação para gerenciamento de pedidos com POO",
-      details: [
-        "Desenvolvimento de uma aplicação para gerenciamento de pedidos",
-        "Aplicação de conceitos de Programação Orientada a Objetos",
-        "Implementação de funcionalidades de cadastro, consulta e gerenciamento",
-        "Utilização de Git e GitHub para controle de versão"
+      description: "Aplicação para gerenciamento de pedidos utilizando Programação Orientada a Objetos",
+      features: [
+        "Cadastro de pedidos",
+        "Consulta de pedidos",
+        "Edição de informações",
+        "Controle de versão com Git"
       ],
+      concepts: [
+        "Programação Orientada a Objetos",
+        "Herança e Polimorfismo",
+        "Encapsulamento",
+        "Padrões de Design"
+      ],
+      technologies: ["Java", "POO", "Git", "GitHub"],
       tags: ["Java", "POO", "Git", "GitHub"],
-      links: { github: "#", demo: "#" }
-    },
-    {
-      title: "Script de Análise de Dados",
-      tech: "Python",
-      description: "Script para tratamento e análise de dados acadêmicos",
-      details: [
-        "Desenvolvimento de script para tratamento e análise de dados",
-        "Manipulação de arquivos e processamento de informações",
-        "Aplicação de conceitos de lógica de programação",
-        "Implementação de estruturas de dados"
-      ],
-      tags: ["Python", "Análise de Dados", "Estruturas de Dados"],
-      links: { github: "#", demo: "#" }
+      year: "2025",
+      university: "UNICAP",
+      links: { github: "#" }
     },
     {
       title: "Website — Startup Ocupacional 3D",
       tech: "Wix",
-      description: "Website para apresentação de startup de impressão 3D",
-      details: [
-        "Desenvolvimento e organização de website para startup",
-        "Estruturação das informações e conteúdo",
-        "Adaptação do conteúdo para apresentação ao público",
-        "Trabalho em equipe com parceiros acadêmicos"
+      description: "Website para apresentação de startup especializada em soluções de impressão 3D",
+      features: [
+        "Estruturação de informações da startup",
+        "Apresentação de produtos e serviços",
+        "Design responsivo",
+        "Trabalho colaborativo em equipe"
       ],
-      tags: ["Wix", "Design Web", "Trabalho em Equipe"],
+      concepts: [
+        "Web Design",
+        "Desenvolvimento colaborativo",
+        "Arquitetura de informação",
+        "Usabilidade"
+      ],
+      technologies: ["Wix", "Design Web", "HTML", "CSS"],
+      tags: ["Wix", "Web Design", "Trabalho em Equipe"],
+      year: "2025",
+      university: "UNICAP",
       links: { demo: "#" }
     }
   ];
@@ -233,33 +304,142 @@ export default function Home() {
       {/* PROJECTS SECTION */}
       <section className={styles.section} id="projetos">
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Projetos <span>Acadêmicos</span></h2>
+          <h2 className={styles.sectionTitle}>Projetos <span>Principais</span></h2>
           <p className={styles.sectionDescription}>
-            Conheça alguns dos meus principais projetos desenvolvidos durante a graduação
+            Conheça os meus principais projetos desenvolvidos durante a graduação
           </p>
         </div>
+
+        {/* FEATURED PROJECT */}
+        <div className={styles.featuredProjectContainer}>
+          <div className={styles.featuredProject}>
+            <div className={styles.featuredBadge}>Projeto Principal</div>
+            <div className={styles.featuredHeader}>
+              <div>
+                <div className={styles.projectTech}>{mainProject.tech}</div>
+                <h2 className={styles.featuredTitle}>{mainProject.title}</h2>
+                <p className={styles.featuredSubtitle}>{mainProject.subtitle}</p>
+                <p className={styles.featuredDescription}>{mainProject.description}</p>
+              </div>
+            </div>
+
+            <div className={styles.featuredContent}>
+              <div className={styles.featuredSection}>
+                <h4>O Problema</h4>
+                <p>{mainProject.problem}</p>
+              </div>
+
+              <div className={styles.featuredSection}>
+                <h4>Principais Funcionalidades</h4>
+                <ul className={styles.featureList}>
+                  {mainProject.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className={styles.featuredSection}>
+                <h4>Conceitos e Padrões Implementados</h4>
+                <ul className={styles.featureList}>
+                  {mainProject.concepts.map((concept, i) => (
+                    <li key={i}>{concept}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className={styles.featuredTechStack}>
+                <h4>Tecnologias</h4>
+                <div className={styles.techStack}>
+                  {mainProject.technologies.map((tech, i) => (
+                    <span key={i} className={styles.techBadge}>{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className={styles.featuredMeta}>
+                <div className={styles.metaItem}>
+                  <strong>Equipe</strong>
+                  <span>{mainProject.team.join(", ")}</span>
+                </div>
+                <div className={styles.metaItem}>
+                  <strong>Universidade</strong>
+                  <span>{mainProject.university}</span>
+                </div>
+                <div className={styles.metaItem}>
+                  <strong>Ano</strong>
+                  <span>{mainProject.year}</span>
+                </div>
+              </div>
+
+              <div className={styles.featuredTags}>
+                {mainProject.tags.map((tag, i) => (
+                  <span key={i} className={styles.tag}>{tag}</span>
+                ))}
+              </div>
+
+              <div className={styles.featuredLinks}>
+                <a href={mainProject.links.github} target="_blank" rel="noopener noreferrer" className={styles.primaryButton}>
+                  Ver no GitHub
+                </a>
+                <a href={mainProject.links.video} target="_blank" rel="noopener noreferrer" className={styles.secondaryButton}>
+                  Assistir Vídeo
+                </a>
+                <a href={mainProject.links.uml_classes} target="_blank" rel="noopener noreferrer" className={styles.secondaryButton}>
+                  Diagrama UML
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* OTHER PROJECTS */}
         <div className={styles.projectsGrid}>
           {projects.map((project, idx) => (
-            <div key={idx} className={styles.projectCard}>
+            <div key={idx} className={`${styles.projectCard} ${project.featured ? styles.projectCardFeatured : ''}`}>
               <div className={styles.projectTech}>{project.tech}</div>
               <h3 className={styles.projectTitle}>{project.title}</h3>
               <p className={styles.projectDescription}>{project.description}</p>
-              <ul className={styles.projectDescription} style={{ marginBottom: '16px', marginTop: '12px' }}>
-                {project.details.map((detail, i) => (
-                  <li key={i} style={{ marginLeft: '16px' }}>{detail}</li>
-                ))}
-              </ul>
+
+              {project.features && (
+                <div className={styles.projectFeatures}>
+                  <h4>Funcionalidades</h4>
+                  <ul className={styles.featureList}>
+                    {project.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {project.concepts && (
+                <div className={styles.projectConcepts}>
+                  <h4>Conceitos</h4>
+                  <ul className={styles.featureList}>
+                    {project.concepts.map((concept, i) => (
+                      <li key={i}>{concept}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {project.team && (
+                <div className={styles.projectTeam}>
+                  <strong>Equipe:</strong> {project.team.join(", ")}
+                </div>
+              )}
+
               <div className={styles.projectTags}>
                 {project.tags.map((tag, i) => (
                   <span key={i} className={styles.tag}>{tag}</span>
                 ))}
               </div>
+
               <div className={styles.projectLinks}>
-                {project.links.github && (
-                  <a href={project.links.github} className={styles.projectLink}>GitHub</a>
+                {project.links.github && project.links.github !== "#" && (
+                  <a href={project.links.github} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>GitHub</a>
                 )}
-                {project.links.demo && (
-                  <a href={project.links.demo} className={styles.projectLink}>Detalhes</a>
+                {project.links.demo && project.links.demo !== "#" && (
+                  <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>Detalhes</a>
                 )}
               </div>
             </div>
