@@ -512,6 +512,10 @@ export default function Home() {
               <span className={styles.contactLabel}>LinkedIn</span>
               <span className={styles.contactValue}>linkedin.com/in/heitormeira/</span>
             </a>
+            <a href="https://www.instagram.com/heitormeiramelo/" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+              <span className={styles.contactLabel}>Instagram</span>
+              <span className={styles.contactValue}>@heitormeiramelo</span>
+            </a>
           </div>
         </div>
       </section>
