@@ -247,35 +247,55 @@ export default function Home() {
         </a>
       </nav>
 
-      {/* HERO SECTION */}
-      <section className={styles.hero} id="home">
-        <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}><span></span>Bem-vindo ao meu portfólio</p>
-          <h1>
-            Heitor Meira
-            <br />
-            <em>Estudante de Ciência da Computação</em>
-          </h1>
-          <p className={styles.lead}>
-            Especialista em Infraestrutura e Redes. Construindo uma carreira sólida em Engenharia de Redes através de projetos práticos, laboratorios e aprendizado contínuo.
-            Buscando oportunidades de estágio/júnior em Infraestrutura de TI e Redes de Computadores.
-          </p>
-          <div className={styles.heroActions}>
-            <a className={styles.primaryButton} href="#projetos">
-              Ver projetos
-            </a>
-            <a className={styles.secondaryButton} href="/curriculum" target="_blank" rel="noopener noreferrer">
-              Currículo
-            </a>
-            <a className={styles.secondaryButton} href="https://linkedin.com/in/heitormeira/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            <a className={styles.secondaryButton} href="#contato">
-              Contato
-            </a>
-          </div>
-        </div>
-      </section>
+{/* HERO SECTION */}
+<section className={styles.hero} id="home">
+  <div className={styles.heroCopy}>
+    <p className={styles.eyebrow}>
+      <span></span>Bem-vindo ao meu portfólio
+    </p>
+
+    <h1>
+      Heitor Meira
+      <br />
+      <em>Estudante de Ciência da Computação</em>
+    </h1>
+
+    <p className={styles.lead}>
+      Com foco em Infraestrutura e Redes, venho construindo minha trajetória
+      em Engenharia de Redes através de projetos práticos, laboratórios e
+      aprendizado contínuo. Busco oportunidades de estágio ou posições
+      júnior em Infraestrutura de TI e Redes de Computadores.
+    </p>
+
+    <div className={styles.heroActions}>
+      <a className={styles.primaryButton} href="#projetos">
+        Ver projetos
+      </a>
+
+      <a
+        className={styles.secondaryButton}
+        href="/curriculum"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Currículo
+      </a>
+
+      <a
+        className={styles.secondaryButton}
+        href="https://linkedin.com/in/heitormeira/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a className={styles.secondaryButton} href="#contato">
+        Contato
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* ABOUT SECTION */}
       <section className={styles.section} id="sobre">
