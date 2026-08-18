@@ -261,10 +261,7 @@ export default function Home() {
     </h1>
 
     <p className={styles.lead}>
-      Com foco em Infraestrutura e Redes, venho construindo minha trajetória
-      em Engenharia de Redes através de projetos práticos, laboratórios e
-      aprendizado contínuo. Busco oportunidades de estágio ou posições
-      júnior em Infraestrutura de TI e Redes de Computadores.
+      Com foco em Infraestrutura e Redes, venho construindo minha trajetória em Engenharia de Redes através de projetos práticos, laboratórios e aprendizado contínuo. Busco oportunidades de estágio ou posições júnior em Infraestrutura de TI e Redes de Computadores.
     </p>
 
     <div className={styles.heroActions}>
