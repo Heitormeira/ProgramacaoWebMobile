@@ -89,24 +89,86 @@ export default function Home() {
       year: "2025",
       university: "UNICAP",
       links: { demo: "#" }
+    },
+    {
+      title: "Lab Topologia Híbrida — Mininet + Docker",
+      tech: "Mininet, Docker, Linux",
+      description: "Simulação de rede corporativa híbrida combinando Mininet (simulação de rede) com Docker (containerização)",
+      problem: "Compreender e demonstrar na prática como redes corporativas são arquitetadas, como containers se comunicam e como analisar o tráfego entre eles",
+      features: [
+        "Topologia de rede simulada no Mininet com 3 switches e múltiplos hosts",
+        "Containers Docker em rede isolada com docker-compose",
+        "Teste de conectividade entre hosts simulados e containers",
+        "Análise de latência e bandwidth com iperf",
+        "Documentação detalhada com prints e logs",
+        "Reprodutibilidade — código disponível para replicar o lab"
+      ],
+      concepts: [
+        "Arquitetura de Redes (Topologia, Switching, Roteamento)",
+        "Virtualização com Docker e Containerização",
+        "Networking no Docker (bridge, host, overlay)",
+        "Ferramentas de diagnóstico (ping, traceroute, iperf)",
+        "Simulação de redes com Mininet",
+        "Linux — iptables, namespaces, network stack"
+      ],
+      technologies: ["Mininet", "Docker", "Docker Compose", "Linux", "Python", "Bash", "iperf"],
+      tags: ["Redes", "Mininet", "Docker", "Containerização", "Linux", "Simulação", "Laboratório"],
+      team: ["Heitor Meira"],
+      year: "2025",
+      university: "UNICAP — Autoformação",
+      links: {
+        github: "https://github.com/heitormeira/lab-mininet-docker-networking"
+      },
+      featured: false
+    },
+    {
+      title: "Análise de Tráfego de Rede — Wireshark + Casos Práticos",
+      tech: "Wireshark, Mininet, tcpdump",
+      description: "Captura, análise e documentação de tráfego de rede real em diferentes cenários, identificando protocolos, vulnerabilidades e comportamentos",
+      problem: "Entender como dados trafegam pela rede, identificar protocolos, detectar anomalias e compreender segurança de rede na prática",
+      features: [
+        "Captura de pacotes em tempo real com Wireshark",
+        "Análise detalhada de protocolos: TCP, UDP, DNS, HTTP/HTTPS, DHCP, ARP",
+        "Filtros de captura e display (display filters, BPF)",
+        "Identificação de tráfego criptografado vs. em claro",
+        "Análise de fluxos TCP — Three-way handshake, flags (SYN, ACK, FIN)",
+        "Exportação e documentação de findings com exemplos práticos",
+        "Casos de estudo: comunicação normal vs. tentativa de ataque ARP spoofing"
+      ],
+      concepts: [
+        "Camadas OSI e TCP/IP Stack",
+        "Protocolos de Transporte (TCP, UDP) e Aplicação (DNS, HTTP, HTTPS)",
+        "Análise de pacotes e estatísticas",
+        "Segurança de Rede — identificação de riscos",
+        "ARP, DHCP, DNS — como funcionam na prática",
+        "TLS/SSL — criptografia de dados em trânsito"
+      ],
+      technologies: ["Wireshark", "tcpdump", "Mininet", "Linux", "Bash"],
+      tags: ["Wireshark", "Análise de Tráfego", "Segurança de Redes", "Protocolos", "Linux", "Laboratório"],
+      team: ["Heitor Meira"],
+      year: "2025",
+      university: "UNICAP — Autoformação",
+      links: {
+        github: "https://github.com/heitormeira/wireshark-traffic-analysis"
+      },
+      featured: false
     }
   ];
 
   const experience = [
     {
-      title: "Estagiário de TI",
+      title: "Estagiário de TI — Infraestrutura & Suporte",
       company: "SINDHOSPE",
       period: "2026 – Atual",
       location: "Recife, Pernambuco",
       activities: [
-        "Suporte às demandas relacionadas a sistemas e tecnologia dos diferentes setores",
-        "Organização, tratamento e digitalização de dados de associados e documentos",
-        "Criação e atualização de planilhas para controle e acompanhamento de informações",
-        "Utilização de Excel e Power BI para organização e análise de dados",
-        "Levantamento de necessidades dos setores e apoio na identificação de soluções tecnológicas",
-        "Criação de relatórios e materiais digitais",
-        "Análise da presença digital da instituição",
-        "Elaboração de relatório técnico com pontos de melhoria"
+        "Suporte técnico e diagnóstico de problemas de sistemas e conectividade",
+        "Análise de infraestrutura de TI e levantamento de necessidades",
+        "Configuração e manutenção de ambientes virtualizados",
+        "Documentação de topologias de rede e fluxo de dados",
+        "Organização, tratamento e análise de dados operacionais com Excel e Power BI",
+        "Identificação de soluções tecnológicas baseadas em infraestrutura",
+        "Relatórios técnicos com recomendações de melhoria em infraestrutura"
       ]
     },
     {
@@ -126,16 +188,20 @@ export default function Home() {
 
   const skills = [
     {
+      category: "Redes & Infraestrutura",
+      items: ["Mininet (Simulação de Redes)", "Wireshark (Análise de Tráfego)", "Docker & Containerização", "Oracle Virtual Box", "Linux (Terminal, Bash, iptables)", "TCP/IP, DNS, DHCP, Roteamento", "VLAN, QoS, Segurança de Redes"]
+    },
+    {
       category: "Linguagens",
-      items: ["Java", "Python", "C"]
+      items: ["Java", "Python", "C", "Bash/Shell"]
     },
     {
       category: "Programação",
-      items: ["Programação Orientada a Objetos", "Estruturas de Dados", "Lógica de Programação", "Desenvolvimento Back-end"]
+      items: ["Programação Orientada a Objetos", "Estruturas de Dados", "Lógica de Programação"]
     },
     {
-      category: "Ferramentas",
-      items: ["Git", "GitHub", "VS Code", "Excel", "Power BI"]
+      category: "Ferramentas & Sistemas",
+      items: ["Git", "GitHub", "VS Code", "Linux", "Excel", "Power BI"]
     }
   ];
 
@@ -191,12 +257,15 @@ export default function Home() {
             <em>Estudante de Ciência da Computação</em>
           </h1>
           <p className={styles.lead}>
-            Construindo minha carreira em desenvolvimento de software através de projetos, tecnologia e aprendizado contínuo.
-            Buscando oportunidades de estágio/júnior em desenvolvimento de software com interesse em back-end.
+            Especialista em Infraestrutura e Redes. Construindo uma carreira sólida em Engenharia de Redes através de projetos práticos, laboratorios e aprendizado contínuo.
+            Buscando oportunidades de estágio/júnior em Infraestrutura de TI e Redes de Computadores.
           </p>
           <div className={styles.heroActions}>
             <a className={styles.primaryButton} href="#projetos">
               Ver projetos
+            </a>
+            <a className={styles.secondaryButton} href="/curriculum" target="_blank" rel="noopener noreferrer">
+              Currículo
             </a>
             <a className={styles.secondaryButton} href="https://linkedin.com/in/heitormeira/" target="_blank" rel="noopener noreferrer">
               LinkedIn
@@ -218,14 +287,16 @@ export default function Home() {
             <div className={styles.aboutText}>
               <h3>Quem sou eu?</h3>
               <p>
-                Sou estudante de Ciência da Computação na UNICAP, com interesse em desenvolvimento de software, principalmente na área de back-end.
-                Tenho experiência profissional como estagiário de TI no SINDHOSPE, onde trabalho com suporte às demandas dos setores, organização e tratamento de dados, documentos, Excel, Power BI e identificação de necessidades que podem ser solucionadas com tecnologia.
+                Sou estudante de Ciência da Computação na UNICAP com forte foco em Infraestrutura de TI e Redes de Computadores. 
+                Tenho experiência profissional como estagiário de TI no SINDHOSPE, onde trabalho com suporte técnico, levantamento de necessidades tecnológicas, análise de infraestrutura e identificação de soluções com base em dados e tecnologia.
               </p>
               <p>
-                Possuo também experiência profissional internacional na Austrália, onde trabalhei na City Beach como Packer/Picker. Essa experiência me proporcionou contato com um ambiente profissional multicultural, além de desenvolver minha comunicação em inglês, capacidade de adaptação, organização e trabalho em equipe.
+                Possuo experiência prática com ferramentas de simulação e análise de redes como <strong>Mininet</strong>, <strong>Wireshark</strong>, <strong>Docker</strong> e <strong>Oracle Virtual Box</strong>.
+                Tenho sólidos conhecimentos em conceitos de redes como TCP/IP, DNS, DHCP, roteamento, VLAN, segurança de redes e containerização.
               </p>
               <p>
-                Na universidade, venho desenvolvendo projetos utilizando Java, Python e C, estudando conceitos como Programação Orientada a Objetos, estruturas de dados, lógica de programação e controle de versão com Git/GitHub.
+                Experiência profissional internacional na Austrália, onde desenvolvi comunicação fluida em inglês, adaptabilidade em ambientes multiculturais e mentalidade colaborativa.
+                Na universidade, desenvolvimento de projetos em Java, Python e C que demonstram lógica estruturada e compreensão de conceitos computacionais fundamentais.
               </p>
             </div>
 
@@ -239,8 +310,8 @@ export default function Home() {
                 <span>Pernambuco, Brasil</span>
               </div>
               <div className={styles.highlightCard}>
-                <strong>Back-end</strong>
-                <span>Área de Interesse</span>
+                <strong>Redes & Infraestrutura</strong>
+                <span>Especialização</span>
               </div>
               <div className={styles.highlightCard}>
                 <strong>2024</strong>
