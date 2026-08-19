@@ -1,272 +1,146 @@
-# 🎯 Portfólio Heitor Meira — Especialista em Redes & Infraestrutura
+# Portfólio — Heitor Meira
 
-> Estudante de **Ciência da Computação** (UNICAP) com foco em **Infraestrutura de TI e Redes de Computadores**.  
-> Experiência com **Mininet, Wireshark, Docker, Linux** e conceitos avançados de redes TCP/IP.
+Portfólio pessoal com projetos e estudos voltados principalmente para **Redes de Computadores e Infraestrutura de TI**.
 
----
+Sou estudante de Ciência da Computação na UNICAP e tenho buscado complementar a formação acadêmica com projetos práticos envolvendo redes, Linux, virtualização, análise de tráfego e automação.
 
-## 📋 Índice
+## Projetos
 
-- [Visão Geral](#-visão-geral)
-- [Projetos Principais](#-projetos-principais)
-- [Tecnologias](#-tecnologias)
-- [Como Usar](#-como-usar)
-- [Contato](#-contato)
+### Lab Mininet + Docker
 
----
+**Repositório:** https://github.com/Heitormeira/lab-mininet-docker-networking
 
-## 🎯 Visão Geral
+Laboratório de redes utilizando Mininet e Docker para simular uma estrutura de rede com diferentes segmentos.
 
-Este repositório contém meu **portfólio profissional** e **projetos práticos de redes** desenvolvidos durante meus estudos e experiência profissional.
+O projeto envolve:
 
-### ✨ Destaques
+* Criação de topologias com Mininet
+* Configuração de switches e hosts
+* Separação da rede em diferentes sub-redes
+* Comunicação entre ambientes Mininet e Docker
+* Testes de conectividade
+* Testes de latência e throughput com `iperf`
+* Uso de Docker Compose
+* Serviços em containers
 
-- **2 Projetos Avançados de Redes** com documentação completa
-- **Portfolio Web interativo** em Next.js (React 18)
-- **850+ linhas de código** em Python, Bash e JavaScript
-- **Foco em Infraestrutura & Redes** (não back-end)
-
----
-
-## 📁 Projetos Principais
-
-### 🔴 1. Lab Topologia Híbrida — Mininet + Docker
-
-**📂 Repositório:** https://github.com/Heitormeira/lab-mininet-docker-networking
-
-Simulação de **rede corporativa** combinando Mininet (simulação de rede) com Docker (containerização).
-
-**O que você aprenderá:**
-- ✅ Criar topologias de rede com múltiplos switches e hosts
-- ✅ Configurar redes Docker isoladas
-- ✅ Comunicação entre hosts simulados e containers
-- ✅ Testes de throughput e latência com iperf
-- ✅ Roteamento entre subnets (10.0.0.0, 10.0.1.0, 10.0.2.0)
-
-**Tecnologias:** Mininet, Docker Compose, Python, Linux, iperf, Redis
-
-**Features:**
-- 3 switches em topologia hierárquica
-- 7 hosts em 3 subnets diferentes
-- Containers web e database
-- Health checks automatizados
-- Logging estruturado
+**Tecnologias:** Python, Mininet, Docker, Docker Compose, Linux, iperf e Redis.
 
 ---
 
-### 🔵 2. Análise de Tráfego — Wireshark + Casos Práticos
+### Análise de Tráfego com Wireshark
 
-**📂 Repositório:** https://github.com/Heitormeira/wireshark-traffic-analysis
+**Repositório:** https://github.com/Heitormeira/wireshark-traffic-analysis
 
-Captura e análise de **tráfego de rede real** com identificação de protocolos, vulnerabilidades e comportamentos.
+Projeto voltado para captura e análise de tráfego de rede utilizando Wireshark e ferramentas de linha de comando.
 
-**O que você aprenderá:**
-- ✅ Capturar pacotes em tempo real com tcpdump
-- ✅ Analisar protocolos: TCP, UDP, DNS, HTTP, HTTPS, DHCP, ARP
-- ✅ Compreender TCP 3-way handshake
-- ✅ Identificar anomalias e ataques (ARP spoofing, MITM)
-- ✅ Usar Wireshark GUI e ferramentas CLI
+Entre os assuntos trabalhados estão:
 
-**Tecnologias:** Wireshark, tcpdump, Scapy, Python, Bash, Linux
+* Captura de pacotes com tcpdump
+* Análise de TCP e UDP
+* DNS
+* HTTP e HTTPS
+* DHCP
+* ARP
+* TCP 3-way handshake
+* Análise de arquivos `.pcap`
+* Automação de análises com Python
+* Conceitos básicos de segurança de redes
 
-**Features:**
-- Script interativo para 8 tipos de captura
-- Analisador automático de .pcap com Python
-- 6 casos práticos documentados
-- Análise de segurança integrada
-- Exportação de relatórios
-
----
-
-### 🟢 3. Portfolio Web — Next.js + React
-
-**📂 Diretório:** `/react-01`
-
-Portfólio profissional **interativo** mostrando meus projetos, experiência e habilidades.
-
-**Features:**
-- ✅ Design moderno e responsivo
-- ✅ Seções: Sobre, Projetos, Experiência, Skills, Formação
-- ✅ Links para GitHub e LinkedIn
-- ✅ Currículo em PDF
-
-**Tecnologias:** Next.js 15, React 18, CSS Modules, JavaScript
+**Tecnologias:** Wireshark, tcpdump, Python, Scapy, Bash e Linux.
 
 ---
 
-## 💻 Tecnologias
+### Portfólio Web
 
-### Redes & Infraestrutura
-- **Mininet** — Simulação de redes
-- **Wireshark** — Análise de tráfego
-- **Docker** — Containerização
-- **Oracle Virtual Box** — Virtualização
-- **Linux** (Bash, iptables, ifconfig, ip)
-- **Protocolo TCP/IP**, DNS, DHCP, Roteamento, VLAN, QoS
+Portfólio desenvolvido para reunir projetos, experiências acadêmicas e profissionais.
 
-### Programação
-- **Python** — Análise de pacotes (Scapy), automação
-- **Bash/Shell** — Scripts de captura e análise
-- **JavaScript** — React, Next.js
-- **Java, C** — POO, Estruturas de Dados
+**Tecnologias:** Next.js, React, JavaScript e CSS.
+
+## Tecnologias
+
+### Redes e infraestrutura
+
+* Mininet
+* Wireshark
+* tcpdump
+* Docker
+* Docker Compose
+* Linux
+* VirtualBox
+* TCP/IP
+* DNS
+* DHCP
+* ARP
+* Roteamento
+* VLAN
+
+### Desenvolvimento
+
+* Python
+* Java
+* C
+* JavaScript
+* React
+* Next.js
+* Bash
 
 ### Ferramentas
-- Git / GitHub
-- VS Code
-- Docker Compose
-- tcpdump
-- Excel, Power BI
 
----
+* Git
+* GitHub
+* VS Code
+* Excel
+* Power BI
 
-## 🚀 Como Usar
+## Experiência
 
-### Opção 1: Explorar os Projetos de Redes
+### Estagiário de TI — SINDHOSPE
 
-```bash
-# Clone e navegue aos projetos
-git clone https://github.com/Heitormeira/lab-mininet-docker-networking.git
-cd lab-mininet-docker-networking
-cat README.md  # Leia a documentação completa
+**2026 – atual | Recife, PE**
 
-git clone https://github.com/Heitormeira/wireshark-traffic-analysis.git
-cd wireshark-traffic-analysis
-cat README.md
-```
+Atuação em atividades relacionadas a suporte, organização de informações, análise de processos e utilização de ferramentas de TI.
 
-### Opção 2: Executar o Portfolio Web Localmente
+### Packer / Picker — City Beach
+
+**2024 | Austrália**
+
+Experiência profissional durante intercâmbio na Austrália, trabalhando com separação, organização e preparação de pedidos.
+
+## Formação
+
+**Ciência da Computação — UNICAP**
+2024 – 2028
+
+Algumas disciplinas relacionadas aos projetos:
+
+* Redes de Computadores
+* Estrutura de Dados
+* Programação Orientada a Objetos
+* Banco de Dados
+* Sistemas Operacionais
+
+## Objetivo
+
+Atualmente, meu interesse está principalmente em oportunidades relacionadas a **Redes de Computadores, Infraestrutura de TI e suporte técnico**, buscando ganhar experiência prática e continuar aprofundando meus conhecimentos na área.
+
+## Links
+
+* GitHub: https://github.com/Heitormeira
+* LinkedIn: https://linkedin.com/in/heitormeira/
+
+## Como executar o portfólio
 
 ```bash
 cd react-01
 npm install
 npm run dev
-# Abra http://localhost:3000
 ```
 
----
-
-## 📊 Estrutura do Repositório
-
-```
-Programa-oWebeMobile/
-├── README.md                              # Este arquivo
-├── LICENSE                                 # MIT License
-│
-├── react-01/                              # Portfolio Web (Next.js)
-│   ├── app/
-│   │   ├── page.js                       # Home page atualizado com Redes
-│   │   ├── page.module.css
-│   │   ├── layout.js
-│   │   └── globals.css
-│   ├── public/
-│   ├── package.json
-│   └── README.md
-│
-├── lab-mininet-docker-networking/        # Projeto 1: Mininet + Docker
-│   ├── README.md                         # Documentação (450+ linhas)
-│   ├── topologia_mininet.py              # Script Python da topologia
-│   ├── docker-compose.yml                # Orquestração Docker
-│   ├── dockerfiles/
-│   │   ├── Dockerfile.web
-│   │   ├── Dockerfile.db
-│   │   └── redis.conf
-│   ├── .gitignore
-│   └── LICENSE
-│
-└── wireshark-traffic-analysis/           # Projeto 2: Wireshark
-    ├── README.md                         # Documentação (500+ linhas)
-    ├── scripts/
-    │   ├── capture_traffic.sh            # Menu interativo
-    │   └── analyze_pcap.py               # Análise automática
-    ├── requirements.txt                  # Dependências Python
-    ├── .gitignore
-    └── LICENSE
-```
+Depois, acesse `http://localhost:3000`.
 
 ---
 
-## 👨‍💻 Experiência Profissional
+**Heitor Meira**
+Estudante de Ciência da Computação | Redes e Infraestrutura de TI
 
-### Estagiário de TI — Infraestrutura & Suporte
-**SINDHOSPE** (2026 – Atual) | Recife, Pernambuco
-
-- Suporte técnico e diagnóstico de problemas de conectividade
-- Análise de infraestrutura de TI
-- Documentação de topologias de rede
-- Levantamento de necessidades tecnológicas
-- Relatórios técnicos com recomendações
-
-### Packer / Picker
-**City Beach** (2024) | Austrália
-
-- Experiência internacional e multicultural
-- Comunicação fluente em inglês
-- Trabalho em equipe e adaptabilidade
-
----
-
-## 🎓 Formação
-
-**Bacharelado em Ciência da Computação**  
-UNICAP — Universidade Católica de Pernambuco (2024 – 2028)
-
-**Disciplinas Relevantes:**
-- Redes de Computadores ✅
-- Estrutura de Dados
-- Programação Orientada a Objetos
-- Banco de Dados
-- Sistemas Operacionais
-
----
-
-## 🌐 Links Importantes
-
-- **Portfolio:** http://localhost:3000 (executar localmente)
-- **GitHub:** https://github.com/heitormeira
-- **LinkedIn:** https://linkedin.com/in/heitormeira/
-- **Currículo:** `/react-01/public/curriculum`
-
-### Repositórios dos Projetos
-- 🔴 Lab Mininet + Docker: https://github.com/Heitormeira/lab-mininet-docker-networking
-- 🔵 Wireshark Analysis: https://github.com/Heitormeira/wireshark-traffic-analysis
-
----
-
-## 📈 Estatísticas
-
-| Métrica | Valor |
-|---------|-------|
-| **Projetos de Redes** | 2 |
-| **Linhas de Código** | 1,700+ |
-| **Linguagens** | 5 (Python, Bash, JavaScript, Java, C) |
-| **Documentação** | 950+ linhas |
-| **Tecnologias** | 15+ |
-
----
-
-## 🤝 Contato
-
-- **Email:** heitor.meira@dev.com
-- **LinkedIn:** https://linkedin.com/in/heitormeira/
-- **GitHub:** https://github.com/heitormeira
-- **Localização:** Recife, Pernambuco, Brasil
-
----
-
-## 📄 Licença
-
-Este repositório está sob a licença **MIT**. Veja [LICENSE](LICENSE) para detalhes.
-
----
-
-## ✅ Status
-
-- ✅ Portfólio atualizado (Agosto 2026)
-- ✅ Projetos de Redes documentados
-- ✅ Repositórios públicos no GitHub
-- 🔄 Em busca de oportunidades de estágio em Infraestrutura & Redes
-
----
-
-**Última atualização:** 18 de agosto de 2026  
-**Autor:** Heitor Meira | Estudante de Ciência da Computação
+Última atualização: agosto de 2026
